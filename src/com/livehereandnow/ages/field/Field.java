@@ -220,8 +220,9 @@ public class Field {
         p2 = new FieldPlayer("amy");
 
         currentPlayer = p1;
-
         AgesCard card;
+        AgesCard card1;
+        AgesCard card2;
         List<AgesCard> list;
 
         // 1
@@ -246,9 +247,12 @@ public class Field {
         p1.步兵區.add(card);
         p2.步兵區.add(card);
 //        allCards.remove(card);
-        card = getCardByName(allCards, "農業");
-        p1.農場區.add(card);
-        p2.農場區.add(card);
+//            ca.add(new AgesCard(2554, 1007, "農業", 0, "內政", "農場", "", "石頭:2", "食物:1", "null", "棕色", 1, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0));
+
+        card1 = new AgesCard(2554, 1007, "農業", 0, "內政", "農場", "", "石頭:2", "食物:1", "null", "棕色", 1, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0);
+        card2 = new AgesCard(2554, 1007, "農業", 0, "內政", "農場", "", "石頭:2", "食物:1", "null", "棕色", 1, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0);
+        p1.農場區.add(card1);
+        p2.農場區.add(card2);
         allCards.remove(card);
 
         card = getCardByName(allCards, "專制");
@@ -629,14 +633,14 @@ public class Field {
                         System.out.print("" + card.toString(1));
                     }
                     break;
-                      case "農場區":
+                case "農場區":
                     System.out.println("");
                     System.out.print("" + title + " ");
                     for (AgesCard card : list) {
                         System.out.print("" + card.toString(8));
                     }
                     break;
-                            case "礦山區":
+                case "礦山區":
                     System.out.println("");
                     System.out.print("" + title + " ");
                     for (AgesCard card : list) {

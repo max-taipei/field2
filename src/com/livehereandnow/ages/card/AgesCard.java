@@ -737,4 +737,8 @@ public class AgesCard implements Serializable {
         return "AgesCard{" + "seq=" + seq + ", id=" + id + ", name=" + name + ", age=" + age + ", civilMilitary=" + civilMilitary + ", tag=" + tag + ", action=" + action + ", iconPoints=" + iconPoints + ", effect=" + effect + ", cost=" + cost + ", color=" + color + ", \ncnt=" + cnt + ", tokenWhite=" + tokenWhite + ", tokenRed=" + tokenRed + ", tokenYellow=" + tokenYellow + ", tokenBlue=" + tokenBlue + ", effectWhite=" + effectWhite + ", effectFood=" + effectFood + ", effectRed=" + effectRed + ", effectMusic=" + effectMusic + ", effectStone=" + effectStone + ", effectIdea=" + effectIdea + ", \neffectSmile=" + effectSmile + ", effectHouse=" + effectHouse + ", effectBlue=" + effectBlue + ", effectWeapon=" + effectWeapon + ", effectWeaponOld=" + effectWeaponOld + ", effectYellow=" + effectYellow + ", costPeople=" + costPeople + ", costFoot=" + costFoot + ", costWonder=" + costWonder + ", \ncostMilitary=" + costMilitary + ", costHorse=" + costHorse + ", costCannon=" + costCannon + ", costPeace=" + costPeace + ", costRevolution=" + costRevolution + ", costRed=" + costRed + ", costStone=" + costStone + ", costIdea=" + costIdea + ", costFood=" + costFood + ", costMusic=" + costMusic + '}';
     }
 
+    public void produce() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
